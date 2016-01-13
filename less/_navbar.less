@@ -162,6 +162,7 @@
 
 .navbar-brand {
   float: left;
+  position:relative;//edited
   //padding: @navbar-padding-vertical @navbar-padding-horizontal;//edited
   padding:20px 30px 10px 15px;//added
   font-size: @font-size-large;
@@ -175,6 +176,8 @@
 
   > img {
     display: block;
+    position: absolute;//edited
+    top:9px;//edited
   }
 
   @media (min-width: @grid-float-breakpoint) {
@@ -193,8 +196,8 @@
 
 .navbar-toggle {
   position: relative;
-  float: right;
-  margin-right: @navbar-padding-horizontal;
+  float: left; //edited was right
+  margin-left: @navbar-padding-horizontal;//edited was margin-right
   padding: 9px 10px;
   .navbar-vertical-align(34px);
   background-color: transparent;
