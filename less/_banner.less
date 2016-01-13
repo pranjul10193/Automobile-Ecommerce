@@ -27,6 +27,15 @@ header[role="banner"]{
 					&:hover{
 						text-decoration:none;
 					}
+					@media (max-width:(@grid-float-breakpoint - 1)){
+						span{
+							.sr-only();//to hide text between span tags ,leaving only the icons
+						}
+						.icon{
+							font-size: 2em;
+							line-height:1.2;//some line height to position them vertically
+						}
+					}
 				}
 			}
 		}
