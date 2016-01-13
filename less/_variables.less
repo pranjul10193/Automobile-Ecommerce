@@ -16,7 +16,8 @@
 @gray-lightest:			 #ededed;//added
 @off-white:				 #fafafa;//added
 
-@brand-primary:         #c1ba62;//edited
+@brand-primary:         #1e90ff;//edited blue
+@brand-feature:			#c60004;//added new red
 @brand-success:         #5cb85c;
 @brand-info:            #5bc0de;
 @brand-warning:         #f0ad4e;
@@ -359,23 +360,23 @@
 //##
 
 // Basics of a navbar
-@navbar-height:                    55px;//edited was 50px
+@navbar-height:                    44px;//edited was 50px
 @navbar-margin-bottom:             @line-height-computed;
 @navbar-border-radius:             @border-radius-base;
 @navbar-padding-horizontal:        floor((@grid-gutter-width / 2));
 @navbar-padding-vertical:          ((@navbar-height - @line-height-computed) / 2);
 @navbar-collapse-max-height:       340px;
 
-@navbar-default-color:             @gray;//edited
+@navbar-default-color:             @text-color;//edited
 @navbar-default-bg:                #fff;//edited
 @navbar-default-border:            @gray-light;//edited
 
 // Navbar links
 @navbar-default-link-color:                @navbar-default-color;//edited
-@navbar-default-link-hover-color:          @link-hover-color;//edited
-@navbar-default-link-hover-bg:             @off-white;//edited
-@navbar-default-link-active-color:         @link-hover-color;//edited
-@navbar-default-link-active-bg:            @gray-lightest;//edited
+@navbar-default-link-hover-color:          @navbar-default-color;//edited
+@navbar-default-link-hover-bg:             darken(@navbar-default-bg,5%);//edited
+@navbar-default-link-active-color:         @navbar-default-color;//edited
+@navbar-default-link-active-bg:            @navbar-default-link-hover-bg;//edited
 @navbar-default-link-disabled-color:       @gray-lighter;//edited
 @navbar-default-link-disabled-bg:          transparent;//edited
 
@@ -385,9 +386,9 @@
 @navbar-default-brand-hover-bg:            transparent;
 
 // Navbar toggle
-@navbar-default-toggle-hover-bg:           #ddd;
-@navbar-default-toggle-icon-bar-bg:        #888;
-@navbar-default-toggle-border-color:       #ddd;
+@navbar-default-toggle-hover-bg:           transparent;//edited
+@navbar-default-toggle-icon-bar-bg:        @gray;//edited
+@navbar-default-toggle-border-color:       transparent;//edited
 
 
 //=== Inverted navbar
