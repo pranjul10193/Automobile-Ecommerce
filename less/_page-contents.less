@@ -2,5 +2,14 @@
 	h1,h2,h3,h4{
 		clear:both;
 		padding-top:20px;
+		@media(min-width:@screen-sm-min){
+			&:first-child{
+				margin-top:0;
+				padding-top:0;//to remove unneeded space in between first heading and margin.
+			}
+		}
 	}
+}
+.content-primary{
+	font-size:@font-size-large;
 }
